@@ -1,6 +1,6 @@
 # Financial Probability
 
-Probability and financial formulas with practical applications related to finance, wealth advisory, risk management, or quantitative roles.
+Probability and financial formulas for practical applications related to finance, wealth advisory, risk management, or quantitative roles.
 
 <br>
 <br>
@@ -15,6 +15,16 @@ Probability and financial formulas with practical applications related to financ
 or
 
 [View full math-rendered version in the notebook](notebooks/formula_explorer.ipynb)
+
+<br>
+<br>
+<br>
+
+---
+
+## Contributions Welcome
+
+If you have equations, scenarios, or scripts to add, create a pull request or open a discussion.
 
 <br>
 <br>
@@ -126,7 +136,3 @@ Rendered using LaTeX with SVG images via [Codecogs](https://latex.codecogs.com/)
 ![Dist](https://latex.codecogs.com/svg.image?\dpi{150}&space;r_t&space;\sim&space;\mathcal{N}(\mu,&space;\sigma^2))
 
 ---
-
-## Contributions Welcome
-
-If you have an equation, scenario, or script to add, create a pull request or open a discussion.
