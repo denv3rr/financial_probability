@@ -2,7 +2,19 @@
 
 Probability and financial formulas with practical applications related to finance, wealth advisory, risk management, or quantitative roles.
 
-[Jump to Formulas Section](#formulas)
+<br>
+<br>
+<br>
+
+---
+
+## Quick view
+
+[Jump to formulas section](#formulas)
+
+or
+
+[View full math-rendered version in the notebook](notebooks/formula_explorer.ipynb)
 
 <br>
 <br>
@@ -10,7 +22,7 @@ Probability and financial formulas with practical applications related to financ
 
 ---
 
-## 📘 Contents
+## Folder Contents
 
 - `docs/` - Explanations of major topics
 - `cheatsheets/` - Printable guides and PDFs
@@ -20,7 +32,7 @@ Probability and financial formulas with practical applications related to financ
 
 ---
 
-## 🔍 Key Topics
+## Key Topics
 
 - Basic Probability
 - Expected Value, Variance, Correlation
