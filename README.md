@@ -61,7 +61,7 @@ jupyter notebook notebooks/interactive_formula_explorer.ipynb
 ## Formulas
 
 **View full math-rendered version in notebook:**  
-[View the Notebook →](notebooks/full_financial_formulas.ipynb)
+[View the Notebook →](notebooks/formula_explorer.ipynb)
 
 Rendered using LaTeX with SVG images via [Codecogs](https://latex.codecogs.com/)
 
