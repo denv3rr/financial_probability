@@ -2,49 +2,66 @@
 
 ---
 
+## Notes:
+- All these equations are commonly implemented in Python using `numpy`, `pandas`, or financial libraries like `numpy_financial`, `QuantLib`, or `PyPortfolioOpt`.
+- You can easily wrap each formula in functions for reusable analysis.
+
+---
+
 ## 1. Future Value (FV)
-\[
-FV = PV \cdot (1 + r)^n
-\]
+```python
+# FV = PV * (1 + r) ** n
+```
+- **PV** = Present Value  
+- **r** = Interest rate per period  
+- **n** = Number of periods  
+
+---
 
 ## 2. Present Value (PV)
-\[
-PV = \frac{FV}{(1 + r)^n}
-\]
+```python
+# PV = FV / (1 + r) ** n
+```
+- Calculates today's value of a future amount.
 
 ---
 
 ## 3. Net Present Value (NPV)
-\[
-NPV = \sum \frac{C_t}{(1 + r)^t} - C_0
-\]
-
-**Use:** Evaluate investment profitability.
+```python
+# NPV = sum([C_t / (1 + r) ** t for t in range(1, n+1)]) - C_0
+```
+- **C_t** = Cash inflow at time t  
+- **r** = Discount rate  
+- **n** = Number of time periods  
+- **C_0** = Initial investment (negative value)
 
 ---
 
 ## 4. Internal Rate of Return (IRR)
-IRR is the rate \( r \) such that:
-\[
-NPV = 0
-\]
-
-**Use:** Forecast the rate of return for a project.
+```python
+# NPV = 0  # Solve for r that sets NPV to zero
+```
+- IRR is found using iterative numerical methods (e.g. Newton-Raphson)
 
 ---
 
-## 5. CAPM - Capital Asset Pricing Model
-\[
-E(R_i) = R_f + \beta_i \cdot (E(R_m) - R_f)
-\]
-
-**Use:** Determine expected return vs. market.
+## 5. Capital Asset Pricing Model (CAPM)
+```python
+# E_Ri = Rf + beta_i * (E_Rm - Rf)
+```
+- **E_Ri** = Expected return of investment i  
+- **Rf** = Risk-free rate  
+- **beta_i** = Volatility of asset i relative to market  
+- **E_Rm** = Expected market return
 
 ---
 
 ## 6. Sharpe Ratio
-\[
-\text{Sharpe} = \frac{E(R_p) - R_f}{\sigma_p}
-\]
+```python
+# Sharpe = (E_Rp - Rf) / std_p
+```
+- **E_Rp** = Expected return of the portfolio  
+- **Rf** = Risk-free rate  
+- **std_p** = Standard deviation of the portfolio (volatility)
 
-**Use:** Risk-adjusted return.
+
